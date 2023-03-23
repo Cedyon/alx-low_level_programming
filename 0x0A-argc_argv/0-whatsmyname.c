@@ -1,13 +1,15 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- * main - name of the program
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: Always 0 (Success)
+ * main - function
+ * @argc: offset count
+ * @argv: offset value
+ * Return: 0
  */
-int main(int argc __attribute__((unused)), char *argv[])
+
+
+int main(int argc, char *argv[])
 {
-	printf("%s\n", *argv);
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
